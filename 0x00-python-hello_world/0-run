@@ -1,9 +1,2 @@
-#!/usr/bin/python3
-
-if [ -z "&PYFILE" ]; then
-echo " Error: PYFILE enviroment variable is not set"
-exit 1
-
-fi
-
-python "$PYFILE"
+#!/bin/bash
+python3 $PYFILE
