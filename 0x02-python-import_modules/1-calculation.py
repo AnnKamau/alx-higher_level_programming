@@ -3,7 +3,7 @@
 if __name__=="__main__":
 
     """Print sum, difference, multiple and quatient of 10 and 5."""
-    form calculator_1 import add, sub, mul, div
+    from calculator_1 import add, sub, mul, div
 
     a = 10
     b = 5
