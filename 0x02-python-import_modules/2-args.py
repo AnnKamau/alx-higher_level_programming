@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-if __name__ =="__main__":
+if __name__ == "__main__":
     """Print number of and list of argumanets."""
     import sys
 
