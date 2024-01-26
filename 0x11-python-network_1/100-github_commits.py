@@ -6,6 +6,7 @@ Prints all commits by: `<sha>: <author name>` (one by line)
 """
 
 
+
 if __name__ == '__main__':
     from requests import get
     from sys import argv

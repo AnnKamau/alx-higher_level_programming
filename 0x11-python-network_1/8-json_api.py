@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter."""
+"""
+sends a POST request to http://0.0.0.0:5000/search_user
+with the letter as a parameter.
+"""
+
 
 
 if __name__ = '__main__':
@@ -20,6 +24,6 @@ if __name__ = '__main__':
             print("[{}] {}".format(_id, name))
         else:
             print('No result')
-        else:
+    else:
             print('Not a valid JSON')
 
