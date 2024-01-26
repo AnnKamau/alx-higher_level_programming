@@ -1,4 +1,4 @@
 #!/bin/bash
 #takes in a URL as an argument, sends a GET request to the URL
-curl -s -H "X-School-User-Id: 98" "$1"
+curl -sH "X-HolbertonSchool-User-Id: 98" "${1}"
 
