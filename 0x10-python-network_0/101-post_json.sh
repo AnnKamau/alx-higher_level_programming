@@ -1,5 +1,6 @@
 #!/bin/bash
-#sends a JSON POST request to a URL passed as the first argument
+"""sends a JSON POST request to a URL passed as the first argument"""
+
 if [ -f "$2" ]
 then
 	curl -s -X POST -H "Content-Type: application/json" -d @"$2" "$1"
