@@ -1,1 +1,3 @@
-0x15-javascript-web_jquery
+// updates the text color of the Header to #FF0000 (red)
+
+document.querySelector('head').style.color = '#FF0000';
