@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """
-You must use the GitHub API, documentation
-https://developer.githu.com/v3/repos/commits/
-Prints all commits by: `<sha>: <author name>` (one by line)
+Please list 10 commits (from the most recent to oldest) of the repository
+“rails” by the user “rails”
+You must use the GitHub API, here is the documentation
+https://developer.github.com/v3/repos/commits/
+Print all commits by: `<sha>: <author name>` (one by line)
 """
-
 
 
 if __name__ == '__main__':
@@ -13,18 +14,17 @@ if __name__ == '__main__':
 
     repo = argv[1]
     owner = argv[2]
-    w = 0
+    i = 0
 
-    URL = "https://developer.githu.com/v3/repos/{}/{}/commits/".format(owner, repo)
+    URL = "https://api.github.com/repos/{}/{}/commits".format(owner, repo)
 
     response = get(URL)
     json = response.json()
 
     for element in json:
-        if w > 9:
+        if i > 9:
             break
         sha = element.get('sha')
         author = element.get('commit').get('author').get('name')
         print("{}: {}".format(sha, author))
-        w += 1
-
+        i += 1
